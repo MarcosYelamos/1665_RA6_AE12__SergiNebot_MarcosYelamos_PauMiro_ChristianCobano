@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Añadido Font Awesome -->
 </head>
 <body>
     <header class="main-header">
@@ -39,34 +40,34 @@
         <div class="container">
             <section class="section">
                 <div class="card">
-                    <h2>Problemes detectats</h2>
+                    <h2><i class="fas fa-exclamation-circle"></i> Problemes detectats</h2> <!-- Icono de advertencia -->
                     <ul class="problem-list">
-                        <li>Les sol·licituds de manteniment es fan en paper → risc de pèrdua d'informació o duplicació</li>
-                        <li>Seguiment manual d'incidències → poc eficient i difícil de fer-ne seguiment històric</li>
-                        <li>Inventari mantingut en full de càlcul → fàcilment desactualitzat i amb errors humans</li>
-                        <li>No hi ha control automàtic del manteniment dels equips</li>
+                        <li><i class="fas fa-paperclip"></i> Les sol·licituds de manteniment es fan en paper → risc de pèrdua d'informació o duplicació</li> <!-- Icono de clip -->
+                        <li><i class="fas fa-hand-paper"></i> Seguiment manual d'incidències → poc eficient i difícil de fer-ne seguiment històric</li> <!-- Icono de mano levantada -->
+                        <li><i class="fas fa-file-excel"></i> Inventari mantingut en full de càlcul → fàcilment desactualitzat i amb errors humans</li> <!-- Icono de Excel -->
+                        <li><i class="fas fa-cogs"></i> No hi ha control automàtic del manteniment dels equips</li> <!-- Icono de engranaje -->
                     </ul>
                 </div>
 
                 <div class="card">
-                    <h2>Solucions digitals proposades</h2>
-                    <p><strong>Plataforma de tickets de suport i gestió d'inventari amb control d'estat dels equips</strong></p>
-                    <p><strong>Eina recomanada:</strong> Google Forms + Google Sheets + Glide o Trello / Odoo ITSM</p>
+                    <h2><i class="fas fa-tools"></i> Solucions digitals proposades</h2> <!-- Icono de herramientas -->
+                    <p><strong><i class="fas fa-laptop"></i> Plataforma de tickets de suport i gestió d'inventari amb control d'estat dels equips</strong></p>
+                    <p><strong><i class="fas fa-cogs"></i> Eina recomanada:</strong> Google Forms + Google Sheets + Glide o Trello / Odoo ITSM</p>
                 </div>
 
                 <div class="card">
-                    <h2>Objectius del PTD</h2>
+                    <h2><i class="fas fa-bullseye"></i> Objectius del PTD</h2> <!-- Icono de objetivo -->
                     <ul class="objective-list">
-                        <li>Automatitzar i centralitzar processos</li>
-                        <li>Reduir l'ús de paper i errors humans</li>
-                        <li>Millorar la seguretat i accés a la informació</li>
-                        <li>Estalviar temps i recursos al personal</li>
-                        <li>Garantir traçabilitat i seguiment en temps real</li>
+                        <li><i class="fas fa-robot"></i> Automatitzar i centralitzar processos</li> <!-- Icono de robot -->
+                        <li><i class="fas fa-recycle"></i> Reduir l'ús de paper i errors humans</li> <!-- Icono de reciclaje -->
+                        <li><i class="fas fa-shield-alt"></i> Millorar la seguretat i accés a la informació</li> <!-- Icono de escudo -->
+                        <li><i class="fas fa-clock"></i> Estalviar temps i recursos al personal</li> <!-- Icono de reloj -->
+                        <li><i class="fas fa-search"></i> Garantir traçabilitat i seguiment en temps real</li> <!-- Icono de lupa -->
                     </ul>
                 </div>
 
                 <div class="card">
-                    <h2>Temporalització</h2>
+                    <h2><i class="fas fa-calendar-alt"></i> Temporalització</h2> <!-- Icono de calendario -->
                     <div class="timeline">
                         <div class="timeline-item">
                             <h3>Maig</h3>
@@ -76,13 +77,13 @@
                 </div>
 
                 <div class="card">
-                    <h2>Recursos necessaris</h2>
-                    <p><strong>Eines:</strong> Google Workspace, Trello, Glide, Odoo</p>
-                    <p><strong>Recursos humans:</strong> 1 tècnic informàtic, 1 coordinador TIC</p>
+                    <h2><i class="fas fa-cogs"></i> Recursos necessaris</h2> <!-- Icono de recursos -->
+                    <p><strong><i class="fas fa-wrench"></i> Eines:</strong> Google Workspace, Trello, Glide, Odoo</p>
+                    <p><strong><i class="fas fa-users"></i> Recursos humans:</strong> 1 tècnic informàtic, 1 coordinador TIC</p>
                 </div>
 
                 <div class="card">
-                    <h2>Responsables</h2>
+                    <h2><i class="fas fa-user-tie"></i> Responsables</h2> <!-- Icono de persona responsable -->
                     <div class="responsible-card">
                         <h3>Responsable principal</h3>
                         <p>Coordinador TIC + Tècnic informàtic</p>
@@ -90,13 +91,13 @@
                 </div>
 
                 <div class="card">
-                    <h2>Mesures de seguiment i avaluació</h2>
+                    <h2><i class="fas fa-chart-line"></i> Mesures de seguiment i avaluació</h2> <!-- Icono de gráfico -->
                     <ul class="evaluation-list">
-                        <li>Reunions mensuals de revisió</li>
-                        <li>Enquestes de satisfacció al personal</li>
-                        <li>Nombre d'errors/incidències reduïdes</li>
-                        <li>Informe de comparació abans/després</li>
-                        <li>Feedback directe dels usuaris</li>
+                        <li><i class="fas fa-users-cog"></i> Reunions mensuals de revisió</li> <!-- Icono de reuniones -->
+                        <li><i class="fas fa-poll"></i> Enquestes de satisfacció al personal</li> <!-- Icono de encuesta -->
+                        <li><i class="fas fa-chart-bar"></i> Nombre d'errors/incidències reduïdes</li> <!-- Icono de gráfico -->
+                        <li><i class="fas fa-file-alt"></i> Informe de comparació abans/després</li> <!-- Icono de informe -->
+                        <li><i class="fas fa-comments"></i> Feedback directe dels usuaris</li> <!-- Icono de comentarios -->
                     </ul>
                 </div>
             </section>
