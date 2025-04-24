@@ -17,6 +17,7 @@
     --section-padding: 4rem 0;
 }
 
+/* Reset de márgenes y padding */
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +34,21 @@ body {
     min-height: 100vh;
 }
 
+/* Título de la subpágina */
+.subpage-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem 0; /* Reducido para acercar el título al contenido */
+    margin-bottom: 0; /* Eliminado margen inferior */
+}
+
+.subpage-header h1 {
+    margin-bottom: 0.5rem;  /* Ajustado margen inferior */
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Contenedor central */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -150,6 +166,7 @@ a:hover {
     padding: var(--section-padding);
 }
 
+/* Footer */
 .main-footer {
     background-color: var(--dark-color);
     color: white;
@@ -274,6 +291,14 @@ a:hover {
 .area-card {
     transition: var(--transition);
     text-align: center;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Para alinear los contenidos verticalmente */
+    justify-content: space-between; /* Para asegurarnos que el botón esté al final */
+    height: 100%; /* Asegura que las cajas ocupen el mismo espacio */
 }
 
 .area-card:hover {
@@ -292,91 +317,31 @@ a:hover {
     justify-content: center;
 }
 
-/* Estilos para las subpáginas (1.html, 2.html, 3.html, 4.html) */
-.subpage-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+.card-content {
+    flex-grow: 1; /* Para que el contenido crezca y deje espacio al botón */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
     color: white;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-}
-
-.subpage-header h1 {
-    color: white;
-}
-
-.problem-list, .solution-list, .objective-list, .evaluation-list {
-    list-style-position: inside;
-    margin-bottom: 2rem;
-}
-
-.problem-list li, .solution-list li, .objective-list li, .evaluation-list li {
-    margin-bottom: 0.5rem;
-    padding-left: 1rem;
-}
-
-.problem-list li::marker {
-    color: var(--accent-color);
-}
-
-.solution-list li::marker {
-    color: var(--success-color);
-}
-
-.objective-list li::marker {
-    color: var(--secondary-color);
-}
-
-.responsible-card {
-    background-color: var(--light-color);
-    padding: 1.5rem;
     border-radius: var(--border-radius);
-    margin-bottom: 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: auto; /* Empuja el botón hacia abajo */
 }
 
-.responsible-card h3 {
-    color: var(--primary-color);
+.btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
 }
 
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-    margin-bottom: 2rem;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: var(--secondary-color);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.timeline-item:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -2rem;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    border: 2px solid white;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
     .main-header .container {
         flex-direction: column;
@@ -398,15 +363,14 @@ a:hover {
     h2 {
         font-size: 1.5rem;
     }
-}
 
-@media (max-width: 480px) {
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
+    .areas-grid {
+        grid-template-columns: 1fr 1fr; 
+        gap: 1.5rem; 
     }
 
-    .main-nav li {
-        margin: 0.5rem 0;
+    .area-card {
+        padding: 1rem; 
+        height: auto; /* Asegura que la altura se ajuste al contenido */
     }
 }
